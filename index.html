@@ -20,9 +20,159 @@
     </script>
 </head>
 <body class="bg-[#151515] text-[#B0B0B0] min-h-screen font-sans">
-    
+ <!-- Navigation Bar -->
+
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Chakra Petch', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#151515]">
+
+<!-- Navigation Bar Desktop -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-[#1F1F1F]/95 backdrop-blur-md border-b border-[#3A3A3A]/50 shadow-lg hidden md:block">
+    <div class="container mx-auto px-4 sm:px-6">
+        <div class="flex items-center justify-between h-16 lg:h-20">
+            
+            <!-- Logo/Name -->
+            <a href="#inicio" class="flex items-center gap-2 group">
+                <span class="text-xl lg:text-2xl font-bold font-display text-white group-hover:text-[#FF7AC6] transition-colors duration-300">
+                    DX<span class="text-[#00FFFF]">.</span>
+                </span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <ul class="flex items-center gap-2">
+                <li>
+                    <a 
+                        href="#inicio" 
+                        class="px-4 py-2 text-base text-[#B0B0B0] hover:text-white font-medium transition-colors duration-300 relative group"
+                    >
+                        <span class="relative z-10">Inicio</span>
+                        <span class="absolute inset-0 bg-gradient-to-r from-[#FF7AC6] to-[#00FFFF] opacity-0 group-hover:opacity-10 rounded-lg transition-opacity duration-300"></span>
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="#proyectos" 
+                        class="px-4 py-2 text-base text-[#B0B0B0] hover:text-white font-medium transition-colors duration-300 relative group"
+                    >
+                        <span class="relative z-10">Proyectos</span>
+                        <span class="absolute inset-0 bg-gradient-to-r from-[#FF7AC6] to-[#00FFFF] opacity-0 group-hover:opacity-10 rounded-lg transition-opacity duration-300"></span>
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="#stack" 
+                        class="px-4 py-2 text-base text-[#B0B0B0] hover:text-white font-medium transition-colors duration-300 relative group"
+                    >
+                        <span class="relative z-10">Stack</span>
+                        <span class="absolute inset-0 bg-gradient-to-r from-[#FF7AC6] to-[#00FFFF] opacity-0 group-hover:opacity-10 rounded-lg transition-opacity duration-300"></span>
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="#educacion" 
+                        class="px-4 py-2 text-base text-[#B0B0B0] hover:text-white font-medium transition-colors duration-300 relative group"
+                    >
+                        <span class="relative z-10">Educación</span>
+                        <span class="absolute inset-0 bg-gradient-to-r from-[#FF7AC6] to-[#00FFFF] opacity-0 group-hover:opacity-10 rounded-lg transition-opacity duration-300"></span>
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="#contacto" 
+                        class="ml-2 group relative inline-flex items-center justify-center gap-2 px-5 py-2 rounded-lg font-semibold text-sm text-white bg-[#282828] border-2 border-transparent overflow-hidden transition-all duration-300 hover:scale-105"
+                    >
+                        <span class="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-[#FF7AC6] to-[#00FFFF] -z-10"></span>
+                        <span class="absolute inset-[2px] bg-[#282828] rounded-lg group-hover:bg-[#1F1F1F] transition-colors duration-300 -z-10"></span>
+                        <span class="relative z-10">Contacto</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-[#1F1F1F]/95 backdrop-blur-md border-t border-[#3A3A3A]/50 shadow-lg md:hidden">
+    <div class="container mx-auto px-2">
+        <ul class="flex items-center justify-around h-16">
+            <li class="flex-1">
+                <a 
+                    href="#inicio" 
+                    class="nav-link flex flex-col items-center justify-center gap-1 py-2 text-[#B0B0B0] hover:text-[#FF7AC6] transition-colors duration-300"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                    </svg>
+                    <span class="text-xs font-medium">Inicio</span>
+                </a>
+            </li>
+            <li class="flex-1">
+                <a 
+                    href="#proyectos" 
+                    class="nav-link flex flex-col items-center justify-center gap-1 py-2 text-[#B0B0B0] hover:text-[#FF7AC6] transition-colors duration-300"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+                    </svg>
+                    <span class="text-xs font-medium">Proyectos</span>
+                </a>
+            </li>
+            <li class="flex-1">
+                <a 
+                    href="#stack" 
+                    class="nav-link flex flex-col items-center justify-center gap-1 py-2 text-[#B0B0B0] hover:text-[#00FFFF] transition-colors duration-300"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                    </svg>
+                    <span class="text-xs font-medium">Stack</span>
+                </a>
+            </li>
+            <li class="flex-1">
+                <a 
+                    href="#educacion" 
+                    class="nav-link flex flex-col items-center justify-center gap-1 py-2 text-[#B0B0B0] hover:text-[#00FFFF] transition-colors duration-300"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                    </svg>
+                    <span class="text-xs font-medium">Educación</span>
+                </a>
+            </li>
+            <li class="flex-1">
+                <a 
+                    href="#contacto" 
+                    class="nav-link flex flex-col items-center justify-center gap-1 py-2 text-[#B0B0B0] hover:text-[#FF7AC6] transition-colors duration-300"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    <span class="text-xs font-semibold">Contacto</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Spacer para compensar el navbar fixed -->
+<div class="h-16 lg:h-20 hidden md:block"></div>
+<div class="h-16 md:hidden"></div>
+
+
+
     <!-- Hero Section -->
-    <div class="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-24" id="inicio" >
         <div class="flex flex-col lg:flex-row-reverse items-start gap-6 sm:gap-8 lg:gap-12 max-w-6xl mx-auto">
             
             <!-- Header: Profile Image + Badge (Mobile & Tablet) -->
@@ -51,11 +201,11 @@
 
             <!-- Profile Image (Desktop only) -->
             <div class="hidden lg:block flex-shrink-0">
-                <div class="w-80 h-80 rounded-full overflow-hidden border-4 border-[#B0B0B0] shadow-2xl shadow-[#FFFFFF]/10 transition-transform duration-300 hover:scale-105">
+                <div class="w-80 h-80 rounded-full overflow-hidden border-4 border-[#B0B0B0] shadow-2xl shadow-[#FFFFFF]/10 transition-transform duration-300 hover:scale-105 object-center">
                     <img 
                         src="unnamed.jpg" 
                         alt="Diego Xavier Barros Conde"
-                        class="w-full h-full object-cover"
+                        class="w-full h-full object-cover "
                     />
                 </div>
             </div>
@@ -86,8 +236,19 @@
                 </p>
                 
                 <p class="text-base sm:text-lg text-[#B0B0B0] mb-6 sm:mb-8 max-w-2xl lg:mx-0">
-                    Desarrollador Frontend con experiencia en HTML5, CSS3, PHP y MySQL. 
+                    Desarrollador Frontend con experiencia en HTML5, CSS3, Bootstrap, PHP y MySQL. 
                     Especializado en crear interfaces web responsivas y accesibles con atención al detalle y enfoque en la experiencia de usuario.
+
+                </p>
+
+                <p class="text-base sm:text-lg text-[#B0B0B0] mb-6 sm:mb-8 max-w-2xl lg:mx-0">
+                    Apasionado por el trabajo y obsesionado con aprender. 
+                    Siempre buscando nuevos desafíos que me impulsen a superarme.
+                    
+                </p>
+                <p class="text-base sm:text-lg text-[#B0B0B0] mb-6 sm:mb-8 max-w-2xl lg:mx-0">
+                   En mis ratos libres me gusta jugar videojuegos principalmente CS:GO. 
+                   Esta página está inspirada en el estilo del arma Printstream. 
                 </p>
 
                 <!-- Action Buttons -->
@@ -156,7 +317,7 @@
     </div>
 
     <!-- Projects Section -->
-    <div class="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-24" id="proyectos">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-display text-white mb-8 sm:mb-12 text-center">
                <span class="text-[#FF7AC6]">&lt;</span> Proyectos <span class="text-[#00FFFF]">/&gt;</span>
@@ -190,7 +351,7 @@
                         </div>
 
                         <a 
-                            href="https://github.com/DiegoXavier2442/blog-mvc"
+                            href="https://github.com/DiegoXavier2442/blog_securyte"
                             target="_blank"
                             rel="noopener noreferrer"
                             class="inline-flex items-center gap-2 text-[#FF7AC6] hover:text-[#00FFFF] transition-colors duration-300 text-sm font-semibold"
@@ -231,7 +392,7 @@
                         </div>
 
                         <a 
-                            href="https://github.com/DiegoXavier2442/portafolio-web"
+                            href="https://github.com/DiegoXavier2442/portafolio_web"
                             target="_blank"
                             rel="noopener noreferrer"
                             class="inline-flex items-center gap-2 text-[#00FFFF] hover:text-[#FF7AC6] transition-colors duration-300 text-sm font-semibold"
@@ -283,194 +444,174 @@
         </div>
     </div>
 
-    <!-- Tech Stack Section - AHORA DEBAJO DE PROYECTOS -->
-    <div class="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-24 bg-gradient-to-b from-[#0D0D0D] to-[#151515]">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-display text-white mb-4 text-center">
-                Stack <span class="bg-gradient-to-r from-[#FF7AC6] to-[#00FFFF] bg-clip-text text-transparent">Tecnológico</span>
-            </h2>
-            <p class="text-center text-[#B0B0B0] mb-12 max-w-2xl mx-auto">
-                Tecnologías y herramientas que domino para crear soluciones web completas
-            </p>
+   <div class="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-24 bg-gradient-to-b "id="stack">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-display text-white mb-4 text-center">
+            Stack <span class="bg-gradient-to-r from-[#FF7AC6] to-[#00FFFF] bg-clip-text text-transparent">Tecnológico</span>
+        </h2>
+        <p class="text-center text-[#B0B0B0] mb-12 max-w-2xl mx-auto">
+            Tecnologías y herramientas que domino para crear soluciones web completas
+        </p>
 
-            <!-- Grid de categorías -->
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Frontend -->
-                <div class="bg-[#282828] rounded-xl p-6 sm:p-8 border-2 border-[#3A3A3A] hover:border-[#FF7AC6] transition-all duration-300 shadow-lg">
-                    <h3 class="text-xl sm:text-2xl font-bold font-display text-white mb-6 flex items-center gap-2">
-                        <span class="text-[#FF7AC6]">&lt;</span>
-                        Frontend
-                        <span class="text-[#FF7AC6]">/&gt;</span>
-                    </h3>
-                    <div class="grid grid-cols-3 gap-4">
-                        <!-- HTML5 -->
-                        <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
-                            <div class="w-12 h-12 flex items-center justify-center">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-full h-full"/>
-                            </div>
-                            <span class="text-white text-xs font-semibold">HTML5</span>
-                        </div>
-
-                        <!-- CSS3 -->
-                        <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
-                            <div class="w-12 h-12 flex items-center justify-center">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-full h-full"/>
-                            </div>
-                            <span class="text-white text-xs font-semibold">CSS3</span>
-                        </div>
-
-                       
-
-                        
-
-                        <!-- Tailwind -->
-                        <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
-                            <div class="w-12 h-12 flex items-center justify-center">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-full h-full"/>
-                            </div>
-                            <span class="text-white text-xs font-semibold">Tailwind</span>
-                        </div>
-
-                        <!-- Bootstrap -->
-                        <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
-                            <div class="w-12 h-12 flex items-center justify-center">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="w-full h-full"/>
-                            </div>
-                            <span class="text-white text-xs font-semibold">Bootstrap</span>
-                        </div>
-                    </div>
+       <!-- Grid de categorías -->
+<div class="grid md:grid-cols-2 gap-8" >
+    <!-- Frontend -->
+    <div class="bg-[#282828] rounded-xl p-6 sm:p-8 border-2 border-[#3A3A3A] hover:border-[#FF7AC6] transition-all duration-300 shadow-lg">
+        <h3 class="text-xl sm:text-2xl font-bold font-display text-white mb-6 flex items-center gap-2">
+            <span class="text-[#FF7AC6]">&lt;</span>
+            Frontend
+            <span class="text-[#FF7AC6]">/&gt;</span>
+        </h3>
+        <div class="grid grid-cols-3 gap-4">
+            <!-- HTML5 -->
+            <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-full h-full"/>
                 </div>
+                <span class="text-white text-xs font-semibold">HTML5</span>
+            </div>
 
-                <!-- Backend -->
-                <div class="bg-[#282828] rounded-xl p-6 sm:p-8 border-2 border-[#3A3A3A] hover:border-[#00FFFF] transition-all duration-300 shadow-lg">
-                    <h3 class="text-xl sm:text-2xl font-bold font-display text-white mb-6 flex items-center gap-2">
-                        <span class="text-[#00FFFF]">{</span>
-                        Backend
-                        <span class="text-[#00FFFF]">}</span>
-                    </h3>
-                    <div class="grid grid-cols-3 gap-4">
-                        <!-- PHP -->
-                        <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
-                            <div class="w-12 h-12 flex items-center justify-center">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="w-full h-full"/>
-                            </div>
-                            <span class="text-white text-xs font-semibold">PHP</span>
-                        </div>
-
-                        <!-- MySQL -->
-                        <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
-                            <div class="w-12 h-12 flex items-center justify-center">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-full h-full"/>
-                            </div>
-                            <span class="text-white text-xs font-semibold">MySQL</span>
-                        </div>
-
-                        
-
-                       
-
-                        
-                    </div>
+            <!-- CSS3 -->
+            <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-full h-full"/>
                 </div>
-
-                <!-- Herramientas -->
-           <!-- Herramientas - MISMA DISTRIBUCIÓN QUE APRENDIENDO -->
-<div class="bg-[#282828] rounded-xl p-6 sm:p-8 border-2 border-[#3A3A3A] hover:border-[#FF7AC6] transition-all duration-300 shadow-lg">
-    <h3 class="text-xl sm:text-2xl font-bold font-display text-white mb-6 flex items-center gap-2">
-        <svg class="w-6 h-6 text-[#FF7AC6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-        </svg>
-        Herramientas
-    </h3>
-    <div class="grid grid-cols-3 gap-4">
-        <!-- Git -->
-        <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
-            <div class="w-12 h-12 flex items-center justify-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-full h-full"/>
+                <span class="text-white text-xs font-semibold">CSS3</span>
             </div>
-            <span class="text-white text-xs font-semibold">Git</span>
-        </div>
 
-        <!-- GitHub -->
-        <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
-            <div class="w-12 h-12 flex items-center justify-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-full h-full invert"/>
-            </div>
-            <span class="text-white text-xs font-semibold">GitHub</span>
-        </div>
-
-        <!-- VS Code -->
-        <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
-            <div class="w-12 h-12 flex items-center justify-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="w-full h-full"/>
-            </div>
-            <span class="text-white text-xs font-semibold">VS Code</span>
-        </div>
-
-        <!-- Figma -->
-        <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
-            <div class="w-12 h-12 flex items-center justify-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-full h-full"/>
-            </div>
-            <span class="text-white text-xs font-semibold">Figma</span>
-        </div>
-        
-        
-        
-    </div>
-</div> 
-
-                
-
-                 <!-- APRENDIENDO -->
-                <div class="bg-[#282828] rounded-xl p-6 sm:p-8 border-2 border-[#3A3A3A] hover:border-[#00FFFF] transition-all duration-300 shadow-lg">
-                    <h3 class="text-xl sm:text-2xl font-bold font-display text-white mb-6 flex items-center gap-2">
-                        <span class="text-[#00FFFF]">(</span>
-                        Aprendiendo
-                        <span class="text-[#00FFFF]">)</span>  
-                    </h3>
-                    <div class="grid grid-cols-3 gap-4">
-                        <!-- JavaScript -->
-                        <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
-                            <div class="w-12 h-12 flex items-center justify-center">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-full h-full"/>
-                            </div>
-                            <span class="text-white text-xs font-semibold">JavaScript</span>
-                        </div>
-
-                         <!-- React -->
-                        <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
-                            <div class="w-12 h-12 flex items-center justify-center">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-full h-full"/>
-                            </div>
-                            <span class="text-white text-xs font-semibold">ReactJS</span>
-                        </div>
-
-                        <!-- Java -->
-                        <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
-                            <div class="w-12 h-12 flex items-center justify-center">
-                                <svg preserveAspectRatio="xMidYMid" viewBox="0 0 256 346"><path d="M83 267s-14 8 9 11c27 3 41 2 71-3 0 0 8 5 19 9-67 29-153-2-99-17M74 230s-15 11 8 13c29 3 52 3 92-4 0 0 6 5 15 8-82 24-173 2-115-17" fill="#5382A1"/><path d="M144 166c17 19-4 36-4 36s42-22 22-49c-18-26-32-38 44-82 0 0-119 29-62 95" fill="#E76F00"/><path d="M233 295s10 8-10 15c-39 12-163 15-197 0-12-5 11-13 18-14l12-2c-14-9-89 19-38 28 138 22 251-10 215-27M89 190s-63 15-22 21c17 2 51 2 83-1 26-2 52-7 52-7l-16 9c-64 16-187 8-151-9 30-14 54-13 54-13M202 253c64-33 34-66 13-61l-7 2s2-3 6-5c41-14 73 43-14 66l2-2" fill="#5382A1"/><path d="M162 0s36 36-34 91c-56 45-12 70 0 99-32-30-56-56-40-80 23-35 89-53 74-110" fill="#E76F00"/><path d="M95 345c62 4 158-3 160-32 0 0-4 11-51 20-53 10-119 9-158 2 0 0 8 7 49 10" fill="#5382A1"/></svg>
-                            </div>
-                            <span class="text-white text-xs font-semibold">Java</span>
-                        </div>
-
-                        
-                        <!-- Laravel -->
-                        <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
-                            <div class="w-12 h-12 flex items-center justify-center">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" class="w-full h-full"/>
-                            </div>
-                            <span class="text-white text-xs font-semibold">Laravel</span>
-                        </div>
-                    </div>
+            <!-- Tailwind -->
+            <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" class="w-full h-full"/>
                 </div>
+                <span class="text-white text-xs font-semibold">Tailwind</span>
+            </div>
 
-
+            <!-- Bootstrap -->
+            <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="w-full h-full"/>
+                </div>
+                <span class="text-white text-xs font-semibold">Bootstrap</span>
             </div>
         </div>
     </div>
 
+    <!-- Backend -->
+    <div class="bg-[#282828] rounded-xl p-6 sm:p-8 border-2 border-[#3A3A3A] hover:border-[#00FFFF] transition-all duration-300 shadow-lg">
+        <h3 class="text-xl sm:text-2xl font-bold font-display text-white mb-6 flex items-center gap-2">
+            <span class="text-[#00FFFF]">{</span>
+            Backend
+            <span class="text-[#00FFFF]">}</span>
+        </h3>
+        <div class="grid grid-cols-3 gap-4">
+            <!-- PHP -->
+            <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="w-full h-full"/>
+                </div>
+                <span class="text-white text-xs font-semibold">PHP</span>
+            </div>
+
+            <!-- MySQL -->
+            <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-full h-full"/>
+                </div>
+                <span class="text-white text-xs font-semibold">MySQL</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Herramientas -->
+    <div class="bg-[#282828] rounded-xl p-6 sm:p-8 border-2 border-[#3A3A3A] hover:border-[#FF7AC6] transition-all duration-300 shadow-lg">
+        <h3 class="text-xl sm:text-2xl font-bold font-display text-white mb-6 flex items-center gap-2">
+            <span class="text-[#FF7AC6]">&lt;</span>
+            Herramientas
+            <span class="text-[#FF7AC6]">/&gt;</span>
+        </h3>
+        <div class="grid grid-cols-3 gap-4">
+            <!-- Git -->
+            <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-full h-full"/>
+                </div>
+                <span class="text-white text-xs font-semibold">Git</span>
+            </div>
+
+            <!-- GitHub -->
+            <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-full h-full invert"/>
+                </div>
+                <span class="text-white text-xs font-semibold">GitHub</span>
+            </div>
+
+            <!-- VS Code -->
+            <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="w-full h-full"/>
+                </div>
+                <span class="text-white text-xs font-semibold">VS Code</span>
+            </div>
+
+            <!-- Figma -->
+            <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-full h-full"/>
+                </div>
+                <span class="text-white text-xs font-semibold">Figma</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aprendiendo -->
+    <div class="bg-[#282828] rounded-xl p-6 sm:p-8 border-2 border-[#3A3A3A] hover:border-[#00FFFF] transition-all duration-300 shadow-lg">
+        <h3 class="text-xl sm:text-2xl font-bold font-display text-white mb-6 flex items-center gap-2">
+            <span class="text-[#00FFFF]">(</span>
+            Aprendiendo
+            <span class="text-[#00FFFF]">)</span>  
+        </h3>
+        <div class="grid grid-cols-3 gap-4">
+            <!-- JavaScript -->
+            <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-full h-full"/>
+                </div>
+                <span class="text-white text-xs font-semibold">JavaScript</span>
+            </div>
+
+            <!-- React -->
+            <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-full h-full"/>
+                </div>
+                <span class="text-white text-xs font-semibold">React</span>
+            </div>
+
+            <!-- Java -->
+            <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-full h-full"/>
+                </div>
+                <span class="text-white text-xs font-semibold">Java</span>
+            </div>
+
+            <!-- Laravel -->
+            <div class="group flex flex-col items-center gap-2 p-3 rounded-lg bg-[#1F1F1F] hover:bg-[#3A3A3A] transition-all duration-300 hover:scale-105">
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" class="w-full h-full"/>
+                </div>
+                <span class="text-white text-xs font-semibold">Laravel</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>            
+</div>
+                 
     <!-- Modales Proyecto 1 -->
     <div id="modal1-img1" class="fixed inset-0 bg-black/95 backdrop-blur-sm z-50 hidden target:flex items-center justify-center p-4">
         <div class="relative max-w-7xl max-h-[90vh] w-full flex items-center justify-center group">
@@ -685,7 +826,7 @@
     
 
     <!-- Education Section -->
-    <div class="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-2" id="educacion">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-display text-white mb-8 sm:mb-12 text-center">
                 Educación
@@ -714,7 +855,105 @@
             </div>
         </div>
     </div>
+    <!-- Contact Section -->
+<section  id="contacto" aria-label="Contacto" class="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-display text-white mb-4 text-center">
+            <span class="text-[#FF7AC6]">&lt;</span> Contacto <span class="text-[#00FFFF]">/&gt;</span>
+        </h2>
+        <p class="text-center text-[#B0B0B0] mb-8 sm:mb-12 max-w-2xl mx-auto">
+            ¿Tienes un proyecto en mente? Escríbeme y trabajemos juntos
+        </p>
 
+        <div class="bg-[#282828] rounded-xl p-6 sm:p-8 lg:p-10 border-2 border-[#3A3A3A] shadow-lg hover:border-[#FF7AC6] transition-all duration-300">
+            <form action="procesar_contacto.php" method="POST" class="space-y-6">
+                
+                <!-- Nombre -->
+                <div>
+                    <label for="nombre" class="block text-white font-semibold mb-2 text-sm sm:text-base">
+                        Nombre completo <span class="text-[#FF7AC6]">*</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre" 
+                        required
+                        placeholder="Tu nombre"
+                        class="w-full px-4 py-3 bg-[#1F1F1F] border-2 border-[#3A3A3A] rounded-lg text-white placeholder-[#B0B0B0] focus:border-[#FF7AC6] focus:outline-none transition-colors duration-300"
+                    />
+                </div>
+
+                <!-- Correo -->
+                <div>
+                    <label for="correo" class="block text-white font-semibold mb-2 text-sm sm:text-base">
+                        Correo electrónico <span class="text-[#FF7AC6]">*</span>
+                    </label>
+                    <input 
+                        type="email" 
+                        id="correo" 
+                        name="correo" 
+                        required
+                        placeholder="tu@email.com"
+                        class="w-full px-4 py-3 bg-[#1F1F1F] border-2 border-[#3A3A3A] rounded-lg text-white placeholder-[#B0B0B0] focus:border-[#00FFFF] focus:outline-none transition-colors duration-300"
+                    />
+                </div>
+
+                <!-- Asunto -->
+                <div>
+                    <label for="asunto" class="block text-white font-semibold mb-2 text-sm sm:text-base">
+                        Asunto <span class="text-[#FF7AC6]">*</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        id="asunto" 
+                        name="asunto" 
+                        required
+                        placeholder="¿Sobre qué quieres hablar?"
+                        class="w-full px-4 py-3 bg-[#1F1F1F] border-2 border-[#3A3A3A] rounded-lg text-white placeholder-[#B0B0B0] focus:border-[#FF7AC6] focus:outline-none transition-colors duration-300"
+                    />
+                </div>
+
+                <!-- Descripción -->
+                <div>
+                    <label for="descripcion" class="block text-white font-semibold mb-2 text-sm sm:text-base">
+                        Descripción <span class="text-[#FF7AC6]">*</span>
+                    </label>
+                    <textarea 
+                        id="descripcion" 
+                        name="descripcion" 
+                        required
+                        rows="6"
+                        placeholder="Cuéntame más sobre tu proyecto o consulta..."
+                        class="w-full px-4 py-3 bg-[#1F1F1F] border-2 border-[#3A3A3A] rounded-lg text-white placeholder-[#B0B0B0] focus:border-[#00FFFF] focus:outline-none transition-colors duration-300 resize-vertical"
+                    ></textarea>
+                </div>
+
+                <!-- Botón Enviar -->
+                <div class="flex justify-center sm:justify-start">
+                    <button 
+                        type="submit"
+                        class="group relative inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg font-semibold text-base text-white bg-[#282828] border-2 border-transparent overflow-hidden transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+                    >
+                        <span class="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-[#FF7AC6] to-[#00FFFF] -z-10"></span>
+                        <span class="absolute inset-[2px] bg-[#282828] rounded-lg group-hover:bg-[#1F1F1F] transition-colors duration-300 -z-10"></span>
+                        <span class="relative flex items-center gap-2 z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m22 2-7 20-4-9-9-4Z"/>
+                                <path d="M22 2 11 13"/>
+                            </svg>
+                            Enviar mensaje
+                        </span>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- Info adicional -->
+        
+    </div>
+</section>
+   <!-- https://icon-sets.iconify.design/?query=VS+Code-->
     <!-- Footer -->
     <footer class="bg-[#1F1F1F] text-[#B0B0B0] text-center py-6 sm:py-8 mt-12 sm:mt-16">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
@@ -722,6 +961,6 @@
             <p class="mt-2 text-xs sm:text-sm">Diseñado con <span class="bg-gradient-to-r from-[#FF7AC6] to-[#00FFFF] bg-clip-text text-transparent font-bold">❤️</span> y inspirado en <span class="bg-gradient-to-r from-[#FF7AC6] to-[#00FFFF] bg-clip-text text-transparent font-bold">CS2 Printstream</span>.</p>
         </div>
     </footer>
-
+<script src="js/nav.js"></script>
 </body>
 </html>
