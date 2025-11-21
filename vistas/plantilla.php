@@ -1,8 +1,3 @@
-<?php
-// AL INICIO DEL ARCHIVO plantilla.php (antes del HTML)
-require_once "controladores/formulario.controlador.php";
-?>
-
 
 <!DOCTYPE html>
 <html lang="es">
@@ -24,11 +19,8 @@ require_once "controladores/formulario.controlador.php";
             }
         }
     </script>
-
- 
-
-
 </head>
+
 <body class="bg-[#151515]">
 
 <!-- Navigation Bar Desktop -->
@@ -173,7 +165,7 @@ require_once "controladores/formulario.controlador.php";
             <div class="flex items-center gap-3 lg:hidden w-full">
                 <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-[#B0B0B0] shadow-xl shadow-[#FFFFFF]/10 transition-transform duration-300 hover:scale-105 flex-shrink-0">
                     <img 
-                        src="diego_xavier.jpg" 
+                        src="assets/img/diego_xavier.jpg" 
                         alt="Diego Xavier Barros Conde"
                         class="w-full h-full object-cover"
                     />
@@ -197,7 +189,7 @@ require_once "controladores/formulario.controlador.php";
             <div class="hidden lg:block flex-shrink-0">
                 <div class="w-80 h-80 rounded-full overflow-hidden border-4 border-[#B0B0B0] shadow-2xl shadow-[#FFFFFF]/10 transition-transform duration-300 hover:scale-105 object-center">
                     <img 
-                        src="diego_xavier.jpg" 
+                        src="assets/img/diego_xavier.jpg" 
                         alt="Diego Xavier Barros Conde"
                         class="w-full h-full object-cover "
                     />
@@ -282,7 +274,7 @@ require_once "controladores/formulario.controlador.php";
                     </a>
 
                     <a
-                        href="CV - Diego Xavier Barros Conde_Machala.pdf"
+                        href="assets/cv/CV-Diego_Xavier_Barros_Conde_Machala.pdf"
                         download="CV_Diego_Xavier_Barros_Conde.pdf"
                         class="group relative inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base text-white bg-[#282828] border-2 border-[#3A3A3A] overflow-hidden transition-all duration-300 hover:scale-105 hover:border-transparent shadow-lg hover:shadow-xl"
                         style="background-clip: padding-box;"
@@ -322,7 +314,7 @@ require_once "controladores/formulario.controlador.php";
                 <article class="group bg-[#282828] rounded-xl overflow-hidden border-2 border-[#3A3A3A] hover:border-[#FF7AC6] transition-all duration-300 shadow-md hover:shadow-[#FF7AC6]/30 hover:scale-[1.02]">
                     <a href="#modal1-img1" class="relative block overflow-hidden aspect-video bg-[#1F1F1F] cursor-zoom-in">
                         <img 
-                            src="img/proyecto_blog1.jpg"
+                            src="assets/img/proyecto_blog1.jpg"
                             alt="Blog MVC - Proyecto completo"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                         />
@@ -363,7 +355,7 @@ require_once "controladores/formulario.controlador.php";
                 <article class="group bg-[#282828] rounded-xl overflow-hidden border-2 border-[#3A3A3A] hover:border-[#00FFFF] transition-all duration-300 shadow-md hover:shadow-[#00FFFF]/30 hover:scale-[1.02]">
                     <a href="#modal2-img1" class="relative block overflow-hidden aspect-video bg-[#1F1F1F] cursor-zoom-in">
                         <img 
-                            src="img/Portafolio_web.jpg"
+                            src="assets/img/Portafolio_web.jpg"
                             alt="Portafolio Web Personal"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                         />
@@ -404,7 +396,7 @@ require_once "controladores/formulario.controlador.php";
                 <article class="group bg-[#282828] rounded-xl overflow-hidden border-2 border-[#3A3A3A] hover:border-[#FF7AC6] transition-all duration-300 shadow-md hover:shadow-[#FF7AC6]/30 hover:scale-[1.02]">
                     <a href="#modal3-img1" class="relative block overflow-hidden aspect-video bg-[#1F1F1F] cursor-zoom-in">
                         <img 
-                            src="img/Imagen1.png"
+                            src="assets/img/Imagen1.png"
                             alt="Editor Monaco - Implementación"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                         />
@@ -622,7 +614,7 @@ require_once "controladores/formulario.controlador.php";
             </a>
             
             <img 
-                src="img/proyecto_blog1.jpg" 
+                src="assets/img/proyecto_blog1.jpg" 
                 alt="Blog MVC - Vista principal"
                 class="w-full h-full object-contain rounded-lg border-2 border-white/10 shadow-2xl"
             />
@@ -654,7 +646,7 @@ require_once "controladores/formulario.controlador.php";
             </a>
             
             <img 
-                src="img/proyecto_blog2.jpg" 
+                src="assets/img/proyecto_blog2.jpg" 
                 alt="Blog MVC - Panel admin"
                 class="w-full h-full object-contain rounded-lg border-2 border-white/10 shadow-2xl"
             />
@@ -686,7 +678,7 @@ require_once "controladores/formulario.controlador.php";
             </a>
             
             <img 
-                src="img/proyecto_blog3.jpg" 
+                src="assets/img/proyecto_blog3.jpg" 
                 alt="Blog MVC - Sistema de posts"
                 class="w-full h-full object-contain rounded-lg border-2 border-white/10 shadow-2xl"
             />
@@ -719,7 +711,7 @@ require_once "controladores/formulario.controlador.php";
             </a>
             
             <img 
-                src="img/Portafolio_web.jpg" 
+                src="assets/img/Portafolio_web.jpg" 
                 alt="Portafolio Web - Vista completa"
                 class="w-full h-full object-contain rounded-lg border-2 border-white/10 shadow-2xl"
             />
@@ -751,7 +743,7 @@ require_once "controladores/formulario.controlador.php";
             </a>
             
             <img 
-                src="img/portafolio_web2.jpg" 
+                src="assets/img/portafolio_web2.jpg" 
                 alt="Portafolio Web - Sección proyectos"
                 class="w-full h-full object-contain rounded-lg border-2 border-white/10 shadow-2xl"
             />
@@ -783,7 +775,7 @@ require_once "controladores/formulario.controlador.php";
             </a>
             
             <img 
-                src="img/portafolio_web3.jpg" 
+                src="assets/img/portafolio_web3.jpg" 
                 alt="Portafolio Web - Responsive"
                 class="w-full h-full object-contain rounded-lg border-2 border-white/10 shadow-2xl"
             />
@@ -810,7 +802,7 @@ require_once "controladores/formulario.controlador.php";
             </a>
             
             <img 
-                src="img/Imagen1.png" 
+                src="assets/img/Imagen1.png" 
                 alt="Editor Monaco - Vista completa"
                 class="w-full h-full object-contain rounded-lg border-2 border-white/10 shadow-2xl"
             />
@@ -864,7 +856,7 @@ require_once "controladores/formulario.controlador.php";
     <?php
     $csrfToken = ControladorFormularios::ctrGenerarTokenCSRF();
     
-    // MOSTRAR MENSAJES
+    //  MENSAJES
     if(isset($mensajeFormulario)) {
         if($mensajeFormulario == "exito") {
             echo '
