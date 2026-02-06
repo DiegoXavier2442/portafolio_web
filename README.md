@@ -114,3 +114,11 @@ Subir todos los archivos del proyecto
 Acceder al proyecto mediante el dominio creado
 
 https://diego-xavier.infinityfree.me/index.php
+
+# ADICIONAL
+
+El archivo tailwind.config.js es para que funciona la extencion Tailwind CSS IntelliSense es una extencion de autocompletado.
+
+En la carpeta assets intente implementar un sprite.svg para guardar los iconos, sin envargo no puede implementar por que me presentavan fallas en
+
+navegadres como Firefox.

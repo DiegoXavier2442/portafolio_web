@@ -19,8 +19,11 @@
             }
         }
     </script>
-</head>
 
+ 
+
+
+</head>
 <body class="bg-[#151515]">
 
 <!-- Navigation Bar Desktop -->
@@ -165,13 +168,13 @@
             <div class="flex items-center gap-3 lg:hidden w-full">
                 <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-[#B0B0B0] shadow-xl shadow-[#FFFFFF]/10 transition-transform duration-300 hover:scale-105 flex-shrink-0">
                     <img 
-                        src="assets/img/diego_xavier.jpg" 
+                        src="assets/img/Foto_Diego.png" 
                         alt="Diego Xavier Barros Conde"
                         class="w-full h-full object-cover"
-                    />
+                    />wb
                 </div>
                 <a 
-                    href="https://www.linkedin.com/in/tu-perfil-linkedin" 
+                    href="https://www.linkedin.com/in/Diego-Barros-b18135362/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     class="group relative inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg font-semibold text-xs sm:text-sm text-white bg-[#282828] border-2 border-transparent overflow-hidden transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl whitespace-nowrap"
@@ -189,7 +192,7 @@
             <div class="hidden lg:block flex-shrink-0">
                 <div class="w-80 h-80 rounded-full overflow-hidden border-4 border-[#B0B0B0] shadow-2xl shadow-[#FFFFFF]/10 transition-transform duration-300 hover:scale-105 object-center">
                     <img 
-                        src="assets/img/diego_xavier.jpg" 
+                        src="assets/img/Foto_Diego.png" 
                         alt="Diego Xavier Barros Conde"
                         class="w-full h-full object-cover "
                     />
@@ -200,7 +203,7 @@
             <div class="flex-1 w-full lg:text-left">
                 <!-- Badge (Desktop only) -->
                 <a 
-                    href="https://www.linkedin.com/in/tu-perfil-linkedin" 
+                    href="https://www.linkedin.com/in/Diego-Barros-b18135362/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     class="hidden lg:inline-flex group relative items-center justify-center gap-2 px-4 py-2 rounded-lg font-semibold text-sm text-white bg-[#282828] border-2 border-transparent overflow-hidden transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl mb-6"
@@ -232,10 +235,7 @@
                     Siempre buscando nuevos desafíos que me impulsen a superarme.
                     
                 </p>
-                <p class="text-base sm:text-lg text-[#B0B0B0] mb-6 sm:mb-8 max-w-2xl lg:mx-0">
-                   En mis ratos libres me gusta jugar videojuegos principalmente CS:GO. 
-                   Esta página está inspirada en el estilo del arma Printstream. 
-                </p>
+                
 
                 <!-- Action Buttons -->
                 <div class="flex flex-wrap gap-3 sm:gap-4 lg:justify-start">
@@ -295,12 +295,7 @@
         </div>
     </div>
 
-    <!-- Scroll Indicator -->
-    <div class="flex justify-center py-4">
-        <svg class="w-5 h-5 sm:w-6 sm:h-6 animate-bounce text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1v12m0 0 4-4m-4 4L1 9"/>
-        </svg>
-    </div>
+   
 
     <!-- Projects Section -->
     <div class="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-24" id="proyectos">
